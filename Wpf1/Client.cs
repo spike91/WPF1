@@ -8,15 +8,18 @@ namespace Wpf1
 {
     public class Client
     {
-        public int ClientId;
-        public string Firstname;
-        public string Lastname;
-        public DateTime birthday;
-        public string telephone;
-        public string email;
+        public int ClientId { get; set; }
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
+        public DateTime Birthday { get; set; }
+        public string Telephone { get; set; }
+        public string Email { get; set; }
 
-        public int InvoiceId;
-        public Invoice Invoice;
+        public ICollection<Booking> Bookings { get; set; }
 
+        public Client()
+        {
+            Bookings = new List<Booking>();
+        }
     }
 }

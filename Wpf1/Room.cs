@@ -8,15 +8,17 @@ namespace Wpf1
 {
     public class Room
     {
-        public int RoomId;
-        public string number;
-        public string bedrooms;
-        public double price;
-        public bool available;
+        public int RoomId { get; set; }
+        public string Number { get; set; }
+        public string Bedrooms { get; set; }
+        public double Price { get; set; }
+        public bool Available { get; set; }
 
-        public int HotelId;
-        public Hotel Hotel;
+        public ICollection<Booking> Bookings { get; set; }
 
-        public ICollection<Invoice> Invoices;
+        public Room()
+        {
+            Bookings = new List<Booking>();
+        }
     }
 }
