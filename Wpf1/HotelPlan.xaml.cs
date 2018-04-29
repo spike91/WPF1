@@ -30,37 +30,45 @@ namespace Wpf1
             for (int i =0; i < buttons.Count; i++)
             {
                 buttons[i].Content = "#" + rooms[i].Number + "\nBedrooms: "+ rooms[i].Bedrooms;
+                if (rooms[i].Available)
+                {
+                    buttons[i].Background = new SolidColorBrush(Colors.Green);
+                }
+                else
+                {
+                    buttons[i].Background = new SolidColorBrush(Colors.Red);
+                }
             }
 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window window = new RoomDetails(rooms[0]);
+            Window window = new RoomDetails(rooms[0],buttons[0]);
             window.Show();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Window window = new RoomDetails(rooms[1]);
+            Window window = new RoomDetails(rooms[1], buttons[1]);
             window.Show();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Window window = new RoomDetails(rooms[2]);
-            window.Show();
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            Window window = new RoomDetails(rooms[3]);
+            Window window = new RoomDetails(rooms[2], buttons[2]);
             window.Show();
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            Window window = new RoomDetails(rooms[4]);
+            Window window = new RoomDetails(rooms[3], buttons[3]);
+            window.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Window window = new RoomDetails(rooms[4], buttons[4]);
             window.Show();
         }
     }

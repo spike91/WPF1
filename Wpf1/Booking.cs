@@ -10,7 +10,8 @@ namespace Wpf1
     {
         public int BookingId { get; set; }
         public DateTime Check_in { get; set; }
-        public DateTime Check_out { get; set; }
+        public DateTime? Check_out { get; set; }
+        public bool isClosed { get; set; }
 
         public int RoomId { get; set; }
         public Room Room { get; set; }

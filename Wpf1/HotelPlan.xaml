@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Hotel Plan" Height="518.694" Width="886.036">
     <Grid x:Name="layoutGrid">
-        <Button x:Name="Room1" Content="" HorizontalAlignment="Left" Margin="50,32,0,0" VerticalAlignment="Top" Width="238" Height="137" Background="#FF41B91D" Click="Button_Click"/>
-        <Button x:Name="Room2" Content="" HorizontalAlignment="Left" Margin="341,32,0,0" VerticalAlignment="Top" Width="238" Height="137" Background="#FF41B91D" Click="Button_Click_1"/>
-        <Button x:Name="Room3" Content="" HorizontalAlignment="Left" Margin="630,32,0,0" VerticalAlignment="Top" Width="238" Height="137" Background="#FF41B91D" Click="Button_Click_2"/>
-        <Button x:Name="Room4" Content="" HorizontalAlignment="Left" Margin="630,320,0,0" VerticalAlignment="Top" Width="238" Height="137" Background="#FF41B91D" Click="Button_Click_4"/>
-        <Button x:Name="Room5" Content="" HorizontalAlignment="Left" Margin="341,320,0,0" VerticalAlignment="Top" Width="238" Height="137" Background="#FF41B91D" Click="Button_Click_3"/>
+        <Button x:Name="Room1" Content="" HorizontalAlignment="Left" Margin="50,32,0,0" VerticalAlignment="Top" Width="238" Height="137" Click="Button_Click"/>
+        <Button x:Name="Room2" Content="" HorizontalAlignment="Left" Margin="341,32,0,0" VerticalAlignment="Top" Width="238" Height="137" Click="Button_Click_1"/>
+        <Button x:Name="Room3" Content="" HorizontalAlignment="Left" Margin="630,32,0,0" VerticalAlignment="Top" Width="238" Height="137" Click="Button_Click_2"/>
+        <Button x:Name="Room4" Content="" HorizontalAlignment="Left" Margin="630,320,0,0" VerticalAlignment="Top" Width="238" Height="137" Click="Button_Click_4"/>
+        <Button x:Name="Room5" Content="" HorizontalAlignment="Left" Margin="341,320,0,0" VerticalAlignment="Top" Width="238" Height="137" Click="Button_Click_3"/>
     </Grid>
     
 </Window>

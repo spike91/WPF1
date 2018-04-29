@@ -10,7 +10,18 @@
         <Button x:Name="Block" Content="Block" HorizontalAlignment="Left" Margin="599,65,0,0" VerticalAlignment="Top" Width="75" Click="Block_Click"/>
         <Button x:Name="UnBlock" Content="UnBlock" HorizontalAlignment="Left" Margin="599,110,0,0" VerticalAlignment="Top" Width="75" Click="UnBlock_Click"/>
         <Button x:Name="AddClient" Content="Add Client" HorizontalAlignment="Left" Margin="599,153,0,0" VerticalAlignment="Top" Width="75" Click="AddClient_Click"/>
-        <DataGrid x:Name="ClientsGrid" HorizontalAlignment="Left" Height="292" Margin="53,50,0,0" VerticalAlignment="Top" Width="474"/>
+        
+        <DataGrid x:Name="ClientsGrid" AutoGenerateColumns="False" HorizontalGridLinesBrush="DarkGray"
+    RowBackground="LightGray" AlternatingRowBackground="White" Height="292" Margin="29,47,317,0" VerticalAlignment="Top" Width="500">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="First Name" Binding="{Binding Path=Firstname}" Width="100" />
+                <DataGridHyperlinkColumn Header="Last Name" Binding="{Binding Path=Lastname}" Width="100" />
+                <DataGridTextColumn Header="birthday" Binding="{Binding Path=Birthday}" Width="100" />
+                <DataGridTextColumn Header="Telephone" Binding="{Binding Path=Telephone}" Width="100" />
+                <DataGridTextColumn Header="Email" Binding="{Binding Path=Email}" Width="100" />
+            </DataGrid.Columns>
+        </DataGrid>
         <Label Content="First Name" HorizontalAlignment="Left" Margin="598,204,0,0" VerticalAlignment="Top"/>
         <Label Content="Last Name" HorizontalAlignment="Left" Margin="599,235,0,0" VerticalAlignment="Top"/>
         <Label Content="Birthday" HorizontalAlignment="Left" Margin="599,266,0,0" VerticalAlignment="Top"/>

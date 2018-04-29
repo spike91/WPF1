@@ -13,9 +13,10 @@ namespace Wpf1.Migrations
                     {
                         BookingId = c.Int(nullable: false, identity: true),
                         Check_in = c.DateTime(nullable: false),
-                        Check_out = c.DateTime(nullable: false),
+                        Check_out = c.DateTime(nullable: true),
                         RoomId = c.Int(nullable: false),
-                    })
+                    IsClosed = c.Boolean(nullable: false, defaultValue: false),
+                })
                 .PrimaryKey(t => t.BookingId)
                 .ForeignKey("dbo.Rooms", t => t.RoomId, cascadeDelete: true)
                 .Index(t => t.RoomId);
